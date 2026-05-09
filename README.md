@@ -1,10 +1,13 @@
 # weather-data-pipeline
 
 ## Overview
-This project extracts weather data from OpenWeatherMap API, stores raw JSON in GCS, and loads it into BigQuery.
+This project is an end-to-end ETL/ELT pipeline using OpenWeatherMap API, Google Cloud Storage, BigQuery, and dbt.
+This pipeline extracts weather data from external API, stores raw response in GCS, loads the raw data into BigQuery, and uses dbt to transform the data into clean analytics-ready models.
 
 ## Architecture
-API -> JSON -> GCS -> BigQuery
+OpenWeatherMap API -> python extract script -> GCS raw landing zone -> BigQuery raw table -> dbt staging model
+:arrow_down:
+
 
 ## Features
 - API extraction
@@ -16,6 +19,7 @@ API -> JSON -> GCS -> BigQuery
 - Python
 - Google Cloud Storage
 - BigQuery
+- dbt Core
 
 ## How to run
 1. Add your API key:
