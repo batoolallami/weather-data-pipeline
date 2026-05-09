@@ -66,9 +66,7 @@ api_key = "...."
    dbt test
 4. Generate dbt documentation.
    dbt docs generate
-   dbt docs serve 
-
-python weathermap.py   
+   dbt docs serve  
 
 ## Project Goal
 The goal of this project is to demonstrate a production-style data pipeline:
