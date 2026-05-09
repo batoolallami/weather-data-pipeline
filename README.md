@@ -41,15 +41,15 @@ Raw BigQuery table
 demo.openweather_raw
 
 ## dbt Models
-# Staging Model
+### Staging Model
 stg_openweather
 Cleans and flattens the raw OpenWeather JSON data
 
-# Intermediate Model
+### Intermediate Model
 int_weather_metrics
 Adds reusable weather metrics and classifications.
 
-# Mart Model
+### Mart Model
 fct_weather_summary
 Final analytics-ready table for reporting and dashboarding
 
